@@ -40,7 +40,7 @@ const MdSidebar = () => {
       </div>
     );
   });
-  return <div>{data}</div>;
+  return <div className="">{data}</div>;
 };
 
 export default MdSidebar;
