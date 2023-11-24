@@ -1,5 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import MainSidebar from "@/components/sidebar/MainSidebar";
+import Topside from "@/components/topside/Topside";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <div className="w-[100%] h-[100%] flex">
         <aside className="flex w-[10%] md:w-[20%] md:max-w-[150px] bg-black h-[100vh] flex-col items-center pt-4">
           <div className="flex">
-            <GiHamburgerMenu className="text-white" />
+            <Topside />
           </div>
           <MainSidebar />
         </aside>
