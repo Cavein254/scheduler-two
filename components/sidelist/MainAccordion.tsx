@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FaBookReader } from "react-icons/fa";
 import { FaEllipsis } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
+import MySearch from "../MySearch";
 // import MySearch from "./MySearch";
 
 const AccordionItem = ({ title, content }) => {
@@ -67,7 +68,7 @@ const MainAccordion = () => {
 
   return (
     <div className="border-transparent border-r-gray-300 pt-4">
-      {/* <MySearch /> */}
+      <MySearch placeholder="Search by Title" />
       <Accordion items={accordionItems} />
     </div>
   );
