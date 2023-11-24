@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <div className="w-[100%] h-[100%] flex">
-        <aside className="flex w-[10%] md:w-[20%] md:max-w-[150px] bg-black h-[100vh] flex-col items-center pt-4">
+        <aside className="flex w-[10%] md:w-[20%] md:max-w-[200px] bg-black h-[100vh] flex-col items-center pt-4">
           <div className="flex">
             <Topside />
           </div>
