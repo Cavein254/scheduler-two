@@ -1,4 +1,5 @@
 import MainSidebar from "@/components/sidebar/MainSidebar";
+import Mainsidelist from "@/components/sidelist/Mainsidelist";
 import Topside from "@/components/topside/Topside";
 import React from "react";
 
@@ -11,12 +12,17 @@ const Initial = () => {
         </div>
         <MainSidebar />
       </aside>
-      <aside className="flex flex-col w-[90%] bg-blue-200 h-[100vh]">
-        <div className="bg-white">
+      <div className="flex flex-col w-[90%] bg-blue-200 h-[100vh]">
+        <div className="bg-white h-[20vh]">
           <h1>This will be the heading of the App</h1>
         </div>
-        <div className="flex w-[30%] bg-gray-300 h-[100vh]"></div>
-      </aside>
+        <div className="flex flex-row">
+          <div className="flex bg-gray-300 h-[80vh]">
+            <Mainsidelist />
+          </div>
+          <article className="flex grow">here</article>
+        </div>
+      </div>
     </div>
   );
 };
