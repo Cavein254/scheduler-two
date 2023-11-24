@@ -1,9 +1,13 @@
+"use client";
 import MainSidebar from "@/components/sidebar/MainSidebar";
 import Mainsidelist from "@/components/sidelist/Mainsidelist";
 import Topside from "@/components/topside/Topside";
 import React from "react";
+import { IoIosArrowForward } from "react-icons/io";
+import { useState } from "react";
 
 const Initial = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-[100%] h-[100%] flex">
       <aside className="flex w-[10%] md:w-[20%] md:max-w-[200px] bg-black h-[100vh] flex-col items-center pt-4">
@@ -18,7 +22,13 @@ const Initial = () => {
         </div>
         <div className="flex flex-row">
           <div className="flex bg-gray-300 h-[80vh]">
-            <Mainsidelist />
+            {isOpen ? (
+              <Mainsidelist setIsOpen={setIsOpen} />
+            ) : (
+              <button onClick={() => setIsOpen(true)}>
+                <IoIosArrowForward className="text-2xl" />
+              </button>
+            )}
           </div>
           <article className="flex grow">here</article>
         </div>
