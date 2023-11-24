@@ -1,34 +1,8 @@
-"use client";
-import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaChalkboardTeacher } from "react-icons/fa";
-import { FaRegCircleQuestion } from "react-icons/fa6";
-import SmSidebar from "@/components/sidebar/SmSidebar";
-import MdSidebar from "@/components/sidebar/MdSidebar";
+import MainSidebar from "@/components/sidebar/MainSidebar";
+import DynamicMain from "@/components/sidebar/Main";
 
 export default function Home() {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  const handleWidth = () => {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
-
-  useEffect(() => {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-    window.addEventListener("resize", handleWidth);
-    return () => {
-      window.removeEventListener("resize", handleWidth);
-    };
-  }, []);
   return (
     <main>
       <div className="w-[100%] h-[100%] flex">
@@ -36,9 +10,7 @@ export default function Home() {
           <div className="flex">
             <GiHamburgerMenu className="text-white" />
           </div>
-          <div className="flex mt-4">
-            {window.innerWidth <= 768 ? <SmSidebar /> : <MdSidebar />}
-          </div>
+          <DynamicMain />
         </aside>
         <aside className="flex flex-col w-[90%] bg-blue-200 h-[100vh]">
           <div className="bg-white">
