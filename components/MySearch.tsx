@@ -1,7 +1,10 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 
-const MySearch = ({ placeholder }) => {
+type Props = {
+  placeholder: string;
+};
+const MySearch = ({ placeholder }: Props) => {
   return (
     <div className="">
       <input
