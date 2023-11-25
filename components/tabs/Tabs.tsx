@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { BsNewspaper } from "react-icons/bs";
 
 const Tab = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);

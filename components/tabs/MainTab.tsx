@@ -2,6 +2,7 @@ import React from "react";
 import { BsNewspaper, BsGraphUp } from "react-icons/bs";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import Tab from "./Tabs";
+import MyEditor from "../MyEditor";
 
 const tabs = [
   {
@@ -12,7 +13,7 @@ const tabs = [
   { label: "Insight", content: "Insight", icon: <BsGraphUp /> },
   {
     label: "Notes",
-    content: <div>Content for Tab 3</div>,
+    content: <MyEditor />,
     icon: <AiOutlineThunderbolt />,
   },
 ];
