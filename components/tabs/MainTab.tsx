@@ -7,7 +7,7 @@ import EditorPad from "../editor/EditorPad";
 import ChartPie from "../charts/ChartPie";
 
 const MainTab = () => {
-  const [note, setNote] = useState("");
+  const [note, setNote] = useState<string>("");
   const tabs = [
     {
       label: "Content",

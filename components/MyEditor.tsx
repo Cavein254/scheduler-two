@@ -1,7 +1,11 @@
 import React from "react";
 import Editor from "./editor/Editor";
 
-const MyEditor = ({ note }) => {
+type Props = {
+  note: string;
+};
+
+const MyEditor = ({ note }: Props) => {
   return (
     <div>
       <Editor note={note} />

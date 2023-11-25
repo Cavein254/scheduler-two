@@ -9,12 +9,13 @@ import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import remarkToc from "remark-toc";
 
-// type Props = {
-//   userInput: string;
-// };
-const Editor = ({ note }) => {
+type Props = {
+  note: string;
+};
+const Editor = ({ note }: Props) => {
   return (
     <ReactMarkdown
+      // eslint-disable-next-line
       children={note}
       rehypePlugins={[rehypeRaw, rehypeKatex, rehypeFigure]}
       remarkPlugins={[remarkGfm, remarkMath, remarkToc]}
@@ -22,8 +23,11 @@ const Editor = ({ note }) => {
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || "");
           return !inline && match ? (
+            /* eslint-disable */
             <SyntaxHighlighter
+              // eslint-disable-next-line
               {...props}
+              // eslint-disable-next-line react/no-children-prop
               children={String(children).replace(/\n$/, "")}
               style={materialLight}
               language={match[1]}
