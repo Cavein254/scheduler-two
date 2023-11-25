@@ -12,12 +12,10 @@ import remarkToc from "remark-toc";
 // type Props = {
 //   userInput: string;
 // };
-const Editor = ({}) => {
-  const text =
-    "  # This is **not** a heading, it’s an indented code block $log_2 x^4$.  # This is **not** a heading, it’s an indented code block $log_2 x^4$  # This is **not** a heading, it’s an indented code block $log_2 x^4$ # This is **not** a heading, it’s an indented code block $log_2 x^4$ # This is **not** a heading, it’s an indented code block $log_2 x^4$ # This is **not** a heading, it’s an indented code block $log_2 x^4$ # This is **not** a heading, it’s an indented code block $log_2 x^4$";
+const Editor = ({ note }) => {
   return (
     <ReactMarkdown
-      children={text}
+      children={note}
       rehypePlugins={[rehypeRaw, rehypeKatex, rehypeFigure]}
       remarkPlugins={[remarkGfm, remarkMath, remarkToc]}
       components={{

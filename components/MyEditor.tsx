@@ -1,10 +1,10 @@
 import React from "react";
 import Editor from "./editor/Editor";
 
-const MyEditor = () => {
+const MyEditor = ({ note }) => {
   return (
     <div>
-      <Editor />
+      <Editor note={note} />
     </div>
   );
 };
