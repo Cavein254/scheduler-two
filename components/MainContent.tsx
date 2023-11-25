@@ -3,10 +3,10 @@ import React from "react";
 import { BsDot } from "react-icons/bs";
 
 import { LuClipboardEdit } from "react-icons/lu";
-import MainTab from "./MainTab";
+// import MainTab from "./MainTab";
 const MainContent = () => {
   return (
-    <div className="w-full px-4">
+    <div className="px-4">
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
           <div>
@@ -14,11 +14,11 @@ const MainContent = () => {
               Add Agent Seats to your Subscription
             </h1>
           </div>
-          <div className="flex flex-row mt-2 items-center">
+          <div className="flex flex-col md:flex-row mt-2 md:items-center">
             <span className="rounded-full bg-blue-500 text-white px-2 py-[2px] text-sm">
               Published
             </span>
-            <BsDot className="ml-[1px]" />
+            <BsDot className="ml-[1px] hidden md:block" />
             <span className="text-bold text-sm ml-[1px]">
               Last edited 1 day ago by
             </span>

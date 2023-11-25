@@ -17,7 +17,7 @@ const AccordionItem = ({ title, content }) => {
     <div>
       <div className="flex justify-between items-center hover:bg-gray-100 px-2 rounded-md">
         <div
-          className="flex items-center text-lg font-bold"
+          className="flex items-center text-lg font-bold items-center"
           onClick={toggleAccordion}
         >
           <span>{isOpen ? <GoChevronDown /> : <GoChevronRight />}</span>
