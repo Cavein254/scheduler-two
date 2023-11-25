@@ -3,6 +3,7 @@ import React from "react";
 import { BsDot } from "react-icons/bs";
 
 import { LuClipboardEdit } from "react-icons/lu";
+import MainTab from "./tabs/MainTab";
 // import MainTab from "./MainTab";
 const MainContent = () => {
   return (
@@ -36,7 +37,7 @@ const MainContent = () => {
           <LuClipboardEdit className="text-2xl" />
         </div>
       </div>
-      {/* <MainTab /> */}
+      <MainTab />
     </div>
   );
 };
