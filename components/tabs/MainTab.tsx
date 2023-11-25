@@ -3,11 +3,12 @@ import { BsNewspaper, BsGraphUp } from "react-icons/bs";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import Tab from "./Tabs";
 import MyEditor from "../MyEditor";
+import EditorPad from "../editor/EditorPad";
 
 const tabs = [
   {
     label: "Content",
-    content: "Content",
+    content: <EditorPad note={"This is a simple crazy note"} />,
     icon: <BsNewspaper />,
   },
   { label: "Insight", content: "Insight", icon: <BsGraphUp /> },
