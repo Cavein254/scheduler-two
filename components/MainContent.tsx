@@ -27,7 +27,7 @@ const MainContent = () => {
               src="https://images.unsplash.com/photo-1700317440743-ffe7b2134276?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8"
               alt="user image"
               width={25}
-              height={15}
+              height={25}
               className="rounded-[100%] ml-[2px]"
             />
             <span className="text-bold text-sm ml-[2px]">Santi Cazorla</span>

@@ -5,7 +5,7 @@ const EditorPad = ({ note }) => {
     <div className="h-[64vh] ">
       <textarea
         placeholder="Enter Your Text Here"
-        className="w-full h-full focus:outline-none p-2 text-sm"
+        className="w-full h-full focus:outline-none p-2 text-sm rounded-md md:text-md"
       />
     </div>
   );
